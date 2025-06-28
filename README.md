@@ -1,74 +1,29 @@
-# ⚠️ Importante!!!
-Você pode escolher qualquer um dos desafios para desenvolver. Sinta-se à vontade para começar pelo desafio que mais lhe interessa.
+Projeto feito para a disciplina de Introdução à Programação de Computadores.
 
-# Desafio Super Trunfo - Países - Comparação das Cartas
+Desenvolvido uma versão do jogo super trunfo, onde o usuário pode escolher os atributos para comparar entre as cartas da cidade de Fortaleza e Natal.
+Atributos das cartas:
 
-Bem-vindo ao desafio "Super Trunfo - Países"! Neste projeto, você desenvolverá um sistema para comparar cartas baseadas em atributos de cidades. O desafio é dividido em três níveis: Novato, Aventureiro e Mestre. Cada nível adiciona novas funcionalidades e complexidades, permitindo um aprendizado progressivo.
+Natal:
+População: 703400
+Área: 167.40 km²
+PIB: 24.18 bilhões
+Quantidade de pontos turísticos: 35
+Densidade demográfica: 4201.91 hab/km²
 
-## 🏅 Nível Novato
+Fortaleza:
+População: 2428648
+Área: 315.35 km²
+PIB: 73.40 bilhões
+Quantidade de pontos turísticos: 45
+Densidade demográfica: 7701.43 hab/km²
 
-No nível Novato, você começará implementando a lógica básica de comparação entre cartas utilizando estruturas de decisão `if` e `if-else`.
+O jogo foi feito por um estudante que está em processo de aprendizado. 
+Tenho ciência que muitas das operações dos códigos podem ser "abreviadas" utilizando de outras funções e/ou códigos nos quais ainda não aprendi.
+Pelo fato da amostra ser entre apenas 2 cidades, o jogo não foi programado para lidar com empates na comparação entre os atributos.
 
-### 🚩 Objetivos:
-- **Cadastro de Cartas:** O sistema permitirá ao usuário cadastrar cartas de cidades, incluindo informações como estado, código da carta, nome da cidade, população, área, PIB e número de pontos turísticos.
-- **Comparação de Cartas:** O sistema comparará os atributos de duas cartas e determinará a vencedora com base em uma propriedade específica (população, área, PIB, etc.), escolhida no código.
-- **Exibição de Resultados:** Após a comparação, o sistema exibirá qual carta venceu com base na regra: maior valor vence, exceto em densidade populacional, onde o menor valor é o vencedor.
+MODO DE EXECUÇÃO DO PROGRAMA:
+AO EXECUTAR O JOGO APRESENTARÁ O PRIMEIRO MENU ONDE DEVE SER ESCOLHIDA UMA ENTRE OS 5 ATRIBUTOS DISPONIVEIS PARA COMPARAÇÃO, CASO O USUARIO INSIRA UM NUMERO QUE NAO REPRESENTE UMA OPÇÃO APRESENTADA NO CODIGO, O CODIGO É ENCERRADO COM A MENSAGEM ("Opção inválida")
+APÓS O PRIMEIRO ATRIBUTO SER ESCOLHIDO OS 5 ATRIBUTOS SÃO EXIBIDOS NOVAMENTE MAS COM A MENSAGEM ORIENTANDO QUE O USUÁRIO SELECIONE UMA OPÇÃO DIFERENTE DA PRIMEIRA ESCOLHIDA. CASO O USUARIO INSIRA UM NUMERO QUE NAO REPRESENTE UMA OPÇÃO APRESENTADA NO CODIGO, O CODIGO É ENCERRADO COM A MENSAGEM ("Opção inválida"), CASO SELECIONE O MESMO ATRIBUTO DO MENU 1, É EXIBIDA A MENSAGEM ("Você selecionou 2 atributos iguais")
 
-### 📥 Entrada de Dados:
-- Os dados das cartas serão inseridos manualmente via terminal.
-- O sistema solicitará interativamente as informações de cada carta.
+APÓS SELECIONADOS AMBOS ATRIBUTOS O RESULTADO É MOSTRADO COM AS INFORMAÇÕES DOS ATRIBUTOS COMPARADOS E UM CRITÉRIO CHAMADO "soma" que nada mais é que a soma entre os atributos selecionados da mesma cidade.
 
-### 📤 Saída de Dados:
-- Após o cadastro, as propriedades da cidade serão exibidas de forma organizada.
-- O resultado da comparação será mostrado, indicando a carta vencedora.
-
----
-
-## 🏅 Nível Aventureiro
-
-No nível Aventureiro, você expandirá o sistema para incluir a comparação aninhada e a criação de um menu interativo usando `switch`.
-
-### 🆕 Diferença em relação ao Nível Novato:
-- **Menu Interativo:** O usuário poderá escolher diferentes atributos para comparação através de um menu.
-- **Comparação Aninhada:** Implementação de lógica de comparação mais complexa, utilizando estruturas aninhadas para tomar decisões baseadas em múltiplos atributos.
-
-### 🚩 Novas Funcionalidades:
-- **Cadastro de Cartas:** Similar ao nível Novato, com a adição de comparação de múltiplos atributos.
-- **Menu Interativo:** Uso de `switch` para criar um menu que permite ao jogador escolher os atributos a serem comparados.
-- **Exibição de Resultados:** O sistema exibirá o resultado da comparação, indicando qual carta venceu e qual atributo foi utilizado.
-
----
-
-## 🏅 Nível Mestre
-
-No nível Mestre, o desafio se intensifica com a adição de funcionalidades avançadas, como menus dinâmicos e lógica de decisão complexa com operadores ternários.
-
-### 🆕 Diferença em relação ao Nível Aventureiro:
-- **Escolha de Dois Atributos:** O usuário poderá escolher dois atributos para comparação entre as cartas.
-- **Lógica de Decisão Complexa:** Implementação de estruturas de decisão aninhadas e encadeadas, além do uso de operadores ternários para determinar a carta vencedora.
-- **Menus Dinâmicos:** Os menus serão dinâmicos, permitindo uma navegação fluida entre as opções de comparação.
-
-### 🚩 Novas Funcionalidades:
-- **Comparação de Dois Atributos:** O sistema comparará dois atributos simultaneamente para determinar a carta vencedora.
-- **Lógica Avançada:** Uso de operadores ternários e lógica aninhada para lidar com comparações complexas.
-- **Empates:** O sistema será capaz de lidar com empates, exibindo mensagens apropriadas.
-- **Exibição de Resultados:** Exibição dos resultados das comparações de forma clara e interativa.
-
----
-
-## 📋 Requisitos Funcionais Comuns
-- **Cadastro de Cartas:** O sistema deve permitir o cadastro de cartas com as informações necessárias.
-- **Comparação:** O sistema deve comparar as cartas e determinar a vencedora com base nas regras estabelecidas.
-- **Exibição de Resultados:** Os resultados devem ser exibidos de forma clara, indicando a carta vencedora.
-
-## 📌 Requisitos Não Funcionais Comuns
-- **Usabilidade:** A interface do usuário deve ser simples e intuitiva.
-- **Performance:** O sistema deve executar operações sem atrasos perceptíveis.
-- **Manutenibilidade:** O código deve ser bem estruturado e documentado.
-- **Confiabilidade:** O sistema deve ser robusto e capaz de lidar com entradas inválidas de forma adequada.
-
----
-
-Boa sorte no desenvolvimento deste desafio e aproveite para aprender e se divertir enquanto progride pelos níveis!
-
-Equipe de Ensino - MateCheck
